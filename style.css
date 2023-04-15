@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 400;
+    src: url('fonts/nunito2.woff2') format('woff2'),
+         url('fonts/nunito.woff') format('woff');
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bck.png');
+    
+}
+.box{
+    width: 350px;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    padding: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Nunito';
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    
+}
+.box-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.box h1{
+    margin-top: 14px;
+}
+.progress-bar {
+    border-radius: 3px;
+    width: 360px;
+    height: 12px;
+    background-color: #d1d1d1;
+    margin: auto;
+    margin-bottom: 35px;
+    opacity: .8;
+    position: relative;
+
+}
+.progress-bar::before{
+    content: "5%";
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    bottom: -18px;
+}
+.progress-bar::after{
+    content: "100%";
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    bottom: -18px;
+}
+.progress-bar span{
+    border-radius: 3px;
+    display: block;
+    width: 5%;
+    height: 12px;
+    background-color: #6e60e9;
+    animation: fill 1s ease-in 1;
+}
+
+@keyframes fill{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 5%;
+    }
+}
+.box h2{
+    font-size: 15px;
+    border-radius: 20px;
+    color: white;
+}
+.box h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(iagd.jpg) 50 round;
+  }
+
